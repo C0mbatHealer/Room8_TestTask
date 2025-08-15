@@ -14,7 +14,7 @@ namespace TestSuitBaseShooterMechanics
         {
             InitApi();
             api.StartEditorPlayExt();
-            // api.LoadLevelExt("/ShooterMaps/Maps/L_FiringRange_WP");
+            api.LoadLevelExt("/ShooterMaps/Maps/L_FiringRange_WP");
             api.CreateInputDevice("GDIO", "IMC_Default");
         }
 
