@@ -37,7 +37,7 @@ All helpers function created in modded Lyra blueprint for default character: [Ch
 
 | Function Name | Arguments| Return | Description |
 | --- | --- | --- | --- |
-| Test_CharacterLookAt| TargetName (string) | | Set LookAtTarget (Actor) for looking, and activate OnTick event for rotation camera (for player) or pawn (for bots) to target, if target is a Lyracharacter target point is a head bone |
+| [Test_CharacterLookAt](https://github.com/C0mbatHealer/Room8_TestTask/blob/master/Test_CharacterLookAt.md) | TargetName (string) | | Set LookAtTarget (Actor) for looking, and activate OnTick event for rotation camera (for player) or pawn (for bots) to target, if target is a Lyracharacter target point is a head bone |
 | Test_DisableLookAt | | |Disable look at target, disable OnTick event (for optimization, default character don't have active OnTick event) |
 | Test_DrawCharacterDebugInfo | 0 - disable; 1 - enable | | Draw on screen useful debug info for creating tests |
 | Test_GetJumpingCurrentCount | | Return JumpCurrentCount (int32) | Helper for read character property JumpCurrentCount for validate player jump |
