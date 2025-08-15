@@ -50,3 +50,5 @@ All helpers function created in modded Lyra blueprint for default character: [Ch
 | Test_GetCharacterWeaponAmmoCount | | Return current ammo count for character active weapon (int32) | Helper for tests with validating weapons states |
 | Test_UseAbilityMelee | | | Helper for use Melee action by bots |
 | FindActorByName | ActorName (string) | Actor (Actor Object Ref) | Blueprint Pure Function. Helper for other blueprint functions |
+
+
