@@ -35,6 +35,18 @@ This test suite is designed to validate the core gameplay mechanics of a shooter
 
 All helpers function created in modded Lyra blueprint for default character: [Character_Default](https://github.com/C0mbatHealer/Room8_TestTask/blob/master/TestSuitBaseShooterMechanics/ProjectsMods/Content/Characters/)
 
-| Function Name | Description |
-| --- | --- |
-| | |
+| Function Name | Arguments| Return | Description |
+| --- | --- | --- | --- |
+| Test_CharacterLookAt| TargetName (string) | | Set LookAtTarget (Actor) for looking, and activate OnTick event for rotation camera (for player) or pawn (for bots) to target, if target is a Lyracharacter target point is a head bone |
+| Test_DisableLookAt | | |Disable look at target, disable OnTick event (for optimization, default character don't have active OnTick event) |
+| Test_DrawCharacterDebugInfo | 0 - disable; 1 - enable | | Draw on screen useful debug info for creating tests |
+| Test_GetJumpingCurrentCount | | Return JumpCurrentCount (int32) | Helper for read character property JumpCurrentCount for validate player jump |
+| Test_GetVelocity | | Return current character velocity (Vector3) | Helper for check player movement direction |
+| Test_DrawText | Text (string), Duration in sec (float) | | Helper for draw text on screen. Can be execute from ingame console (best solution) |
+| Test_GetCharacterTeamID | | Return character team id (int32)| Helper for find character team. solution for identifying enemy character for tests |
+| Test_UseAbilityFireWeapon | | | Helper for use Weapon Fire action by bots |
+| Test_GetCharacterHealth | | Return current health count for character (double) | Helper for tests with validating damage |
+| Test_GetCharacterMaxHealth | | Return max health count of character (double) | Helper for tests with validating damage |
+| Test_GetCharacterWeaponAmmoCount | | Return current ammo count for character active weapon (int32) | Helper for tests with validating weapons states |
+| Test_UseAbilityMelee | | | Helper for use Melee action by bots |
+| FindActorByName | ActorName (string) | Actor (Actor Object Ref) | Blueprint Pure Function. Helper for other blueprint functions |
