@@ -1,10 +1,4 @@
 
-using System;
-using System.ComponentModel.DataAnnotations;
-using System.Reflection.PortableExecutable;
-
-using NUnit.Framework.Internal;
-
 namespace TestSuitBaseShooterMechanics
 {
     public class Tests
